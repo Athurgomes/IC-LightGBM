@@ -13,16 +13,18 @@ def plotar_imagem_rgb(img, bandas=(200, 150, 50)):
     except Exception as e:
         print(f"Erro ao plotar: {e}")
 
-def plotar_media_espectral(img):
+def plotar_media_e_mediana_espectral(img):
     try:
         hsi_cube=img.load()
         mean_spectrum=np.mean(hsi_cube, axis=(0, 1))
         std_spectrum=np.std(hsi_cube, axis=(0, 1))
+        median_spectrum=np.median(hsi_cube, axis=(0, 1))
         wavelengths=img.bands.centers
         plt.figure(figsize=(12, 7))
-        plt.plot(wavelengths, mean_spectrum, label='Média Espectral', color='blue')
-        plt.fill_between(wavelengths, mean_spectrum - std_spectrum, mean_spectrum + std_spectrum, color='blue', alpha=0.2, label='±1σ')
-        plt.title('Assinatura Espectral Média (Dados Brutos)', fontsize=16)
+        plt.plot(wavelengths, mean_spectrum, label='Média Espectral', color='blue', linewidth=2)
+        plt.fill_between(wavelengths, mean_spectrum - std_spectrum, mean_spectrum + std_spectrum, color='blue', alpha=0.2, label='±1σ (Média)')
+        plt.plot(wavelengths, median_spectrum, label='Mediana Espectral', color='red', linestyle='--')
+        plt.title('Assinatura Espectral Média e Mediana (Dados Brutos)', fontsize=16)
         plt.xlabel('Comprimento de Onda (nm)', fontsize=12)
         plt.ylabel('Intensidade', fontsize=12)
         plt.grid(True, linestyle='--', alpha=0.6)
