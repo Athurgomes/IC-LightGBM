@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Configuração de IDE
+.vscode/
+
+# Arquivos de Sistema
+.DS_Store
+
+# DADOS
+# Ignora todo o conteúdo dentro das pastas de dados,
+# mas rastreia as pastas em si (por causa do .gitkeep)
+data/bronze/*
+data/silver/*
+data/gold/*
+
+# Mas não ignore o arquivo .gitkeep
+!.gitkeep
