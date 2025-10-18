@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import spectral
 
-def plotar_imagem_rgb(img, bandas=(200, 150, 50)):
+def plotar_imagem_rgb(img, bandas):
     try:
         plt.figure(figsize=(10, 8))
         spectral.imshow(img, bands=bandas)
