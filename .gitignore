@@ -1,3 +1,8 @@
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+
 # Python
 __pycache__/
 *.pyc
@@ -7,13 +12,22 @@ __pycache__/
 
 # Arquivos de Sistema
 .DS_Store
+**/.DS_Store
 
 # DADOS
-# Ignora todo o conteúdo dentro das pastas de dados,
-# mas rastreia as pastas em si (por causa do .gitkeep)
-data/bronze/*
-data/silver/*
-data/gold/*
+# Ajustado para os nomes reais das pastas (com espaço " level")
 
-# Mas não ignore o arquivo .gitkeep
-!.gitkeep
+# Ignora tudo dentro de bronze, silver e gold level
+data/bronze level/*
+data/silver level/*
+data/gold level/*
+
+# Mantém os arquivos .gitkeep (exceção específica por pasta)
+!data/bronze level/.gitkeep
+!data/silver level/.gitkeep
+!data/gold level/.gitkeep
+
+# Garantia extra: Ignorar arquivos pesados onde quer que estejam
+*.csv
+*.npy
+*.zip
