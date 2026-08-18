@@ -1,0 +1,347 @@
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe src/build_metadata.py
+======================================================================
+[OK] D:\IC PUC\HSI-Pipeline-Automation\data\metadata.csv gerado — 19 amostras (3 resistentes / 16 sensíveis)
+
+Ordem de aquisição (conferir o confound resistente x fim-da-sessão):
+   1. 3491B_240506-155911          [isolado_clinico] 15:59:11
+   2. 503B_240506-160006           [isolado_clinico] 16:00:06
+   3. 426_1_240506-160058          [isolado_clinico] 16:00:58
+   4. 539_240506-160131            [isolado_clinico] 16:01:31
+   5. 420_240506-160205            [isolado_clinico] 16:02:05
+   6. 560B_240506-160251           [isolado_clinico] 16:02:51
+   7. 508_240506-160326            [isolado_clinico] 16:03:26
+   8. 548A_240506-160359           [isolado_clinico] 16:03:59
+   9. 554A_240506-160433           [isolado_clinico] 16:04:33
+  10. 534_240506-160510            [isolado_clinico] 16:05:10
+  11. 537_240506-160651            [isolado_clinico] 16:06:51
+  12. 553_240506-160724            [isolado_clinico] 16:07:24
+  13. 549_240506-160758            [isolado_clinico] 16:07:58
+  14. 491_240506-160846            [isolado_clinico] 16:08:46
+  15. 351_1_240506-160920          [isolado_clinico] 16:09:20
+  16. 559_240506-160951            [isolado_clinico] 16:09:51
+  17. ATCC13_240506-161053         [ATCC_referencia] 16:10:53  <-- resistente
+  18. ATCC27_240506-161129         [ATCC_referencia] 16:11:29  <-- resistente
+  19. ATCC16_240506-161158         [ATCC_referencia] 16:11:58  <-- resistente
+
+[ATENCAO] Revise a coluna 'target'/'fenotipo' contra os exames microbiologicos antes de modelar (fonte_rotulo = VERIFICAR).
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe pipeline_completa.py
+======================================================================
+D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\spectral\io\envi.py:187: UserWarning: Parameters with non-lowercase names encountered and converted to lowercase. To retain source file parameter name capitalization, set spectral.settings.envi_support_nonlowercase_params to True.
+  warnings.warn(msg)
+========================================
+INICIANDO PIPELINE DE PROCESSAMENTO HSI
+========================================
+
+ETAPA 1: LER E CALIBRAR OS DADOS
+Processando: 3491B_240506-155911
+  SUCESSO: Salvo em 3491B_240506-155911.npy
+Processando: 351_1_240506-160920
+  SUCESSO: Salvo em 351_1_240506-160920.npy
+Processando: 420_240506-160205
+  SUCESSO: Salvo em 420_240506-160205.npy
+Processando: 426_1_240506-160058
+  SUCESSO: Salvo em 426_1_240506-160058.npy
+Processando: 491_240506-160846
+  SUCESSO: Salvo em 491_240506-160846.npy
+Processando: 503B_240506-160006
+  SUCESSO: Salvo em 503B_240506-160006.npy
+Processando: 508_240506-160326
+  SUCESSO: Salvo em 508_240506-160326.npy
+Processando: 534_240506-160510
+  SUCESSO: Salvo em 534_240506-160510.npy
+Processando: 537_240506-160651
+  SUCESSO: Salvo em 537_240506-160651.npy
+Processando: 539_240506-160131
+  SUCESSO: Salvo em 539_240506-160131.npy
+Processando: 548A_240506-160359
+  SUCESSO: Salvo em 548A_240506-160359.npy
+Processando: 549_240506-160758
+  SUCESSO: Salvo em 549_240506-160758.npy
+Processando: 553_240506-160724
+  SUCESSO: Salvo em 553_240506-160724.npy
+Processando: 554A_240506-160433
+  SUCESSO: Salvo em 554A_240506-160433.npy
+Processando: 559_240506-160951
+  SUCESSO: Salvo em 559_240506-160951.npy
+Processando: 560B_240506-160251
+  SUCESSO: Salvo em 560B_240506-160251.npy
+Processando: ATCC13_240506-161053
+  SUCESSO: Salvo em ATCC13_240506-161053.npy
+Processando: ATCC16_240506-161158
+  SUCESSO: Salvo em ATCC16_240506-161158.npy
+Processando: ATCC27_240506-161129
+  SUCESSO: Salvo em ATCC27_240506-161129.npy
+ETAPA 1 CONCLUÍDA
+
+ETAPA 2: REMOÇÃO DE BANDAS
+  SUCESSO: 3491B_240506-155911.npy cortado.
+  SUCESSO: 351_1_240506-160920.npy cortado.
+  SUCESSO: 420_240506-160205.npy cortado.
+  SUCESSO: 426_1_240506-160058.npy cortado.
+  SUCESSO: 491_240506-160846.npy cortado.
+  SUCESSO: 503B_240506-160006.npy cortado.
+  SUCESSO: 508_240506-160326.npy cortado.
+  SUCESSO: 534_240506-160510.npy cortado.
+  SUCESSO: 537_240506-160651.npy cortado.
+  SUCESSO: 539_240506-160131.npy cortado.
+  SUCESSO: 548A_240506-160359.npy cortado.
+  SUCESSO: 549_240506-160758.npy cortado.
+  SUCESSO: 553_240506-160724.npy cortado.
+  SUCESSO: 554A_240506-160433.npy cortado.
+  SUCESSO: 559_240506-160951.npy cortado.
+  SUCESSO: 560B_240506-160251.npy cortado.
+  SUCESSO: ATCC13_240506-161053.npy cortado.
+  SUCESSO: ATCC16_240506-161158.npy cortado.
+  SUCESSO: ATCC27_240506-161129.npy cortado.
+ETAPA 2 CONCLUÍDA
+
+ETAPA 3: EXTRAÇÃO DE ROIS
+  SUCESSO: ROI extraído de 3491B_240506-155911.npy
+  SUCESSO: ROI extraído de 351_1_240506-160920.npy
+  SUCESSO: ROI extraído de 420_240506-160205.npy
+  SUCESSO: ROI extraído de 426_1_240506-160058.npy
+  SUCESSO: ROI extraído de 491_240506-160846.npy
+  SUCESSO: ROI extraído de 503B_240506-160006.npy
+  SUCESSO: ROI extraído de 508_240506-160326.npy
+  SUCESSO: ROI extraído de 534_240506-160510.npy
+  SUCESSO: ROI extraído de 537_240506-160651.npy
+  SUCESSO: ROI extraído de 539_240506-160131.npy
+  SUCESSO: ROI extraído de 548A_240506-160359.npy
+  SUCESSO: ROI extraído de 549_240506-160758.npy
+  SUCESSO: ROI extraído de 553_240506-160724.npy
+  SUCESSO: ROI extraído de 554A_240506-160433.npy
+  SUCESSO: ROI extraído de 559_240506-160951.npy
+  SUCESSO: ROI extraído de 560B_240506-160251.npy
+  SUCESSO: ROI extraído de ATCC13_240506-161053.npy
+  SUCESSO: ROI extraído de ATCC16_240506-161158.npy
+  SUCESSO: ROI extraído de ATCC27_240506-161129.npy
+ETAPA 3 CONCLUÍDA
+
+ETAPA 4: GERAÇÃO DO SILVER RAW (calibrado) POR AMOSTRA
+ETAPA 4 CONCLUÍDA
+
+ETAPA 5: CONSOLIDAÇÃO FINAL (BUILD DATASET)
+
+[INFO] Consolidando método: raw
+[OK] master_raw.csv salvo. Shape: (403475, 228)
+target
+0    341696
+1     61779
+Name: count, dtype: int64
+
+PIPELINE COMPLETO EXECUTADO COM SUCESSO!
+
+[fresh] caches apagados: []
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 --ExecutePreprocessor.kernel_name=python3 D:\IC PUC\HSI-Pipeline-Automation\notebooks\04_preprocessing_effects.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\04_preprocessing_effects.ipynb to notebook
+D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 299753 bytes to D:\IC PUC\HSI-Pipeline-Automation\notebooks\04_preprocessing_effects.ipynb
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to html --output-dir D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137 D:\IC PUC\HSI-Pipeline-Automation\notebooks\04_preprocessing_effects.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\04_preprocessing_effects.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 2 image(s).
+[NbConvertApp] Writing 594281 bytes to D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137\04_preprocessing_effects.html
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 --ExecutePreprocessor.kernel_name=python3 D:\IC PUC\HSI-Pipeline-Automation\notebooks\06_feature_selection_k15.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\06_feature_selection_k15.ipynb to notebook
+D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 414398 bytes to D:\IC PUC\HSI-Pipeline-Automation\notebooks\06_feature_selection_k15.ipynb
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to html --output-dir D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137 D:\IC PUC\HSI-Pipeline-Automation\notebooks\06_feature_selection_k15.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\06_feature_selection_k15.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 4 image(s).
+[NbConvertApp] Writing 756340 bytes to D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137\06_feature_selection_k15.html
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 --ExecutePreprocessor.kernel_name=python3 D:\IC PUC\HSI-Pipeline-Automation\notebooks\07_hyperparameter_tuning.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\07_hyperparameter_tuning.ipynb to notebook
+D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_a660d51d3b54408ca3ee640d788427fb_16f2af4189c44cf5a5e8dda5afac7da5'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_097b3e5c05dd43aa8182b2594ebb7d4e'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_3e9d1e9c19844f6b9c3cbf0ac5e4f732_cb16c37c48d1467e9a4af3fcf3dcb044'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_a84b39c6421640b896379b9bbaa5ac89'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_ab863e6eaadf4978af1b4fffeba1ccf9_064aa3411bca453ca91dd143cca71561'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_501db9eecf8f414e85b620b92697f45c'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_9b9e2e45798f4661a6e82a3d40a5cbe7_0b98d993cd77456cb080d56a3c058ca1'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_0a4e6514de1c45dfac809debdac2d9f6'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8d0fc7eb7d5a498e8133b95b0bcab87e_4ce13d53b3ff403ab490c4e91c7a2d46'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_786b5a9255c4460eb544cb5cf7015e52'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_d732ad17a2774711bad1659bf3e09c3b_4e4cf1dfd9834da2b372c307d2901966'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_d5c27668c8244d9e8431aa18b74ff249'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_30036e19247d4bfc9fc70a77af257b86_bd952d35582e45fc96f429e981a6f763'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_26409939285e427e9d86803e06e85071'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_f9a2d388b5b747169b48e089dca581c7_a7115218f5064ae1b3bbfde66a323965'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_73a09d26bb5c4aebbc9ab93e1dd14804'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_adc1c0f74d75457998b0610f8d5ec1aa_976ced2754d14de8a5b8d0c7e594a94b'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_c1ed5f4eed304afaafc0675a5184aa81'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_b54b7eb9c17a4dde8b8574d4c7b563ac_337e25401b03403db97106413cbec300'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_5c95342222b04836b99dfd84ee694662'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_e529a25ee1db4635893e0e3a7090cecc_e1c823af01c345ad852ac1338a5f0989'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_26de6a295f0f42dba2fb75eb66eb9397'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8f24fbe3158e4ed294b8799202758643_bd4c54f63f2448d8a9eaf6a4b123abb1'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_3dc31bedd1fb43babc8ead62c38e446b'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_a8c91d56ebf242e1b35771494937717f_9d576a0622a0489aab330f36da54654c'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_5d78bc3f61cd44b78c44706038a968bb'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_4dc35a2f1f604ff3b5bd9a8ec8da2c80_8c6bac3991ed4ab1a354482c4294b32d'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_98190ed89e5747b6bdbd5f30096957a3'[0m
+Traceback (most recent call last):
+  File [35m"D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py"[0m, line [35m319[0m, in [35mmain[0m
+    del [31mregistry[rtype][0m[1;31m[name][0m
+        [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+[1;35mKeyError[0m: [35m'C:\\Users\\ao435\\AppData\\Local\\Temp\\joblib_memmapping_folder_71632_8969c901480c4e489a5e349c26b17882_18827681e5e54315ae34e0f2860e7991'[0m
+[NbConvertApp] Writing 192630 bytes to D:\IC PUC\HSI-Pipeline-Automation\notebooks\07_hyperparameter_tuning.ipynb
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to html --output-dir D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137 D:\IC PUC\HSI-Pipeline-Automation\notebooks\07_hyperparameter_tuning.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\07_hyperparameter_tuning.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
+[NbConvertApp] Writing 516729 bytes to D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137\07_hyperparameter_tuning.html
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 --ExecutePreprocessor.kernel_name=python3 D:\IC PUC\HSI-Pipeline-Automation\notebooks\08_modelo_final.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\08_modelo_final.ipynb to notebook
+D:\IC PUC\HSI-Pipeline-Automation\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 660665 bytes to D:\IC PUC\HSI-Pipeline-Automation\notebooks\08_modelo_final.ipynb
+
+======================================================================
+$ D:\IC PUC\HSI-Pipeline-Automation\.venv\Scripts\python.exe -m nbconvert --to html --output-dir D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137 D:\IC PUC\HSI-Pipeline-Automation\notebooks\08_modelo_final.ipynb
+======================================================================
+[NbConvertApp] Converting notebook D:\IC PUC\HSI-Pipeline-Automation\notebooks\08_modelo_final.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 7 image(s).
+[NbConvertApp] Writing 1032012 bytes to D:\IC PUC\HSI-Pipeline-Automation\runs\20260711_160137\08_modelo_final.html

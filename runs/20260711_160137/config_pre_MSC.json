@@ -1,0 +1,92 @@
+{
+  "pre_proc": "MSC",
+  "metodo_pre": "msc",
+  "metodo_selecao": "mi",
+  "k_bandas": 15,
+  "incluir_features_derivadas": false,
+  "melhores_params": {
+    "boosting_type": "gbdt",
+    "feature_fraction": 0.7,
+    "lambda_l1": 0.0,
+    "lambda_l2": 0.1,
+    "learning_rate": 0.01,
+    "max_depth": 3,
+    "min_child_samples": 2,
+    "num_leaves": 7
+  },
+  "bandas": [
+    "b216",
+    "b215",
+    "b195",
+    "b188",
+    "b193",
+    "b70",
+    "b196",
+    "b189",
+    "b191",
+    "b194",
+    "b204",
+    "b198",
+    "b77",
+    "b202",
+    "b78"
+  ],
+  "metricas_cv": 1.0,
+  "metricas_teste": {
+    "Acurácia": 0.6984126984126985,
+    "Precisão": 0.16666666666666666,
+    "Recall": 0.3333333333333333,
+    "F1-score": 0.2222222222222222,
+    "ROC-AUC": 0.7000000000000001
+  },
+  "metricas_agregadas": {
+    "Acurácia": 0.6984126984126985,
+    "Precisão": 0.16666666666666666,
+    "Recall": 0.3333333333333333,
+    "F1-score": 0.2222222222222222,
+    "ROC-AUC": 0.7000000000000001,
+    "Acurácia (std)": 0.23368939467199143,
+    "Precisão (std)": 0.2886751345948129,
+    "Recall (std)": 0.5773502691896258,
+    "F1-score (std)": 0.3849001794597505,
+    "ROC-AUC (std)": 0.2645751311064591,
+    "Folds válidos": 3.0
+  },
+  "params_por_fold": [
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 2,
+      "num_leaves": 7
+    },
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 2,
+      "num_leaves": 7
+    },
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 1.0,
+      "learning_rate": 0.1,
+      "max_depth": 3,
+      "min_child_samples": 2,
+      "num_leaves": 7
+    }
+  ],
+  "scores_cv_por_fold": [
+    1.0,
+    0.2857142857142857,
+    0.75
+  ]
+}

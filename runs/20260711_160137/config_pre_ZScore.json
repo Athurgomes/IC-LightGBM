@@ -1,0 +1,92 @@
+{
+  "pre_proc": "ZScore",
+  "metodo_pre": "z_score",
+  "metodo_selecao": "mi",
+  "k_bandas": 15,
+  "incluir_features_derivadas": false,
+  "melhores_params": {
+    "boosting_type": "gbdt",
+    "feature_fraction": 0.7,
+    "lambda_l1": 0.0,
+    "lambda_l2": 0.1,
+    "learning_rate": 0.01,
+    "max_depth": 3,
+    "min_child_samples": 10,
+    "num_leaves": 7
+  },
+  "bandas": [
+    "b0",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9",
+    "b10",
+    "b11",
+    "b12",
+    "b13",
+    "b14"
+  ],
+  "metricas_cv": 0.14285714285714285,
+  "metricas_teste": {
+    "Acurácia": 0.25396825396825395,
+    "Precisão": 0.17777777777777778,
+    "Recall": 1.0,
+    "F1-score": 0.30158730158730157,
+    "ROC-AUC": 0.47222222222222227
+  },
+  "metricas_agregadas": {
+    "Acurácia": 0.25396825396825395,
+    "Precisão": 0.17777777777777778,
+    "Recall": 1.0,
+    "F1-score": 0.30158730158730157,
+    "ROC-AUC": 0.47222222222222227,
+    "Acurácia (std)": 0.1512107847877591,
+    "Precisão (std)": 0.01924500897298754,
+    "Recall (std)": 0.0,
+    "F1-score (std)": 0.027492869961410746,
+    "ROC-AUC (std)": 0.0481125224324688,
+    "Folds válidos": 3.0
+  },
+  "params_por_fold": [
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 2,
+      "num_leaves": 7
+    },
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 10,
+      "num_leaves": 7
+    },
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 10,
+      "num_leaves": 7
+    }
+  ],
+  "scores_cv_por_fold": [
+    0.0,
+    0.14285714285714285,
+    0.14285714285714285
+  ]
+}

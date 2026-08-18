@@ -31,3 +31,6 @@ data/gold level/*
 *.csv
 *.npy
 *.zip
+
+# Exceção: metadata.csv é fonte de verdade dos rótulos (arquivo pequeno, versionar)
+!data/metadata.csv

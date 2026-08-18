@@ -1,0 +1,76 @@
+{
+  "pre_proc": "RAW",
+  "metodo_pre": "raw",
+  "metodo_selecao": "None",
+  "k_bandas": 15,
+  "incluir_features_derivadas": true,
+  "melhores_params": {
+    "boosting_type": "gbdt",
+    "feature_fraction": 0.7,
+    "lambda_l1": 0.0,
+    "lambda_l2": 0.1,
+    "learning_rate": 0.01,
+    "max_depth": 3,
+    "min_child_samples": 2,
+    "num_leaves": 7
+  },
+  "bandas": null,
+  "metricas_cv": 0.3333333333333333,
+  "metricas_teste": {
+    "Acurácia": 0.5238095238095238,
+    "Precisão": 0.05555555555555555,
+    "Recall": 0.3333333333333333,
+    "F1-score": 0.09523809523809523,
+    "ROC-AUC": 0.5222222222222223
+  },
+  "metricas_agregadas": {
+    "Acurácia": 0.5238095238095238,
+    "Precisão": 0.05555555555555555,
+    "Recall": 0.3333333333333333,
+    "F1-score": 0.09523809523809523,
+    "ROC-AUC": 0.5222222222222223,
+    "Acurácia (std)": 0.3358746661825211,
+    "Precisão (std)": 0.09622504486493763,
+    "Recall (std)": 0.5773502691896258,
+    "F1-score (std)": 0.1649572197684645,
+    "ROC-AUC (std)": 0.13471506281091272,
+    "Folds válidos": 3.0
+  },
+  "params_por_fold": [
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 2,
+      "num_leaves": 7
+    },
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 2,
+      "num_leaves": 7
+    },
+    {
+      "boosting_type": "gbdt",
+      "feature_fraction": 0.7,
+      "lambda_l1": 0.0,
+      "lambda_l2": 0.1,
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "min_child_samples": 10,
+      "num_leaves": 7
+    }
+  ],
+  "scores_cv_por_fold": [
+    0.0,
+    0.3333333333333333,
+    0.14285714285714285
+  ]
+}
