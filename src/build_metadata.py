@@ -16,7 +16,7 @@ como 'heuristica_ATCC_VERIFICAR'. Ele DEVE ser conferido contra os exames
 microbiológicos do laboratório e corrigido manualmente no CSV — o pipeline
 de modelagem passa a ler o rótulo daqui, não do nome do arquivo.
 
-⚠️  CONFOUND CONHECIDO: neste lote, as 3 amostras resistentes são exatamente
+CONFOUND CONHECIDO: neste lote, as 3 amostras resistentes são exatamente
     as 3 cepas ATCC e foram as 3 ÚLTIMAS imagens da sessão (ver ordem_aquisicao).
     As colunas tipo_cepa e ordem_aquisicao existem justamente para tornar esse
     confundimento explícito e testável (ver teste de permutação / Limitações).

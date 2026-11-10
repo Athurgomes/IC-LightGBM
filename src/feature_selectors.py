@@ -9,7 +9,7 @@ Implementa os três métodos de ranking de bandas descritos no plano de trabalho
 E a seleção por consenso: bandas que aparecem no topo dos três rankings
 são as mais confiáveis para distinguir cepas resistentes de sensíveis.
 
-⚠️  REGRA DE USO — sem data leakage:
+REGRA DE USO — sem data leakage:
     Todas as funções devem ser chamadas APENAS com dados de TREINO.
     O modeling_roi.py garante isso ao chamar estas funções dentro
     de cada fold, antes de avaliar no conjunto de teste.
