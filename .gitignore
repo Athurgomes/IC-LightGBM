@@ -7,12 +7,27 @@ env/
 __pycache__/
 *.pyc
 
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
 # Configuração de IDE
 .vscode/
+.idea/
 
 # Arquivos de Sistema
 .DS_Store
 **/.DS_Store
+Thumbs.db
+**/Thumbs.db
+desktop.ini
+**/desktop.ini
+
+# Credenciais / segredos — nunca versionar
+.env
+.env.*
+*.env
+**/secrets.*
 
 # DADOS
 # Ajustado para os nomes reais das pastas (com espaço " level")
@@ -34,3 +49,9 @@ data/gold level/*
 
 # Exceção: metadata.csv é fonte de verdade dos rótulos (arquivo pequeno, versionar)
 !data/metadata.csv
+
+# RUNS — saídas de run_all.py (HTML, logs, JSON, figuras por execução)
+# Cada execução gera runs/<timestamp>/; não versionar automaticamente.
+# runs/20260711_160137/ já está versionado (evidência do relatório final) e
+# continua rastreado normalmente — esta regra só afeta pastas novas.
+runs/
