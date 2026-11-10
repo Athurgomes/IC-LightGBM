@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Se você usar este código ou os resultados desta pesquisa, por favor cite conforme abaixo."
+title: "Classificação espectral de bactérias multirresistentes com LightGBM em imagens hiperespectrais SWIR"
+type: software
+authors:
+  - family-names: Gomes
+    given-names: Arthur Oliveira
+    affiliation: "Pontifícia Universidade Católica de Goiás"
+repository-code: "https://github.com/Athurgomes/IC-LightGBM"
+date-released: "2026-08-18"
+keywords:
+  - hyperspectral imaging
+  - SWIR
+  - antimicrobial resistance
+  - Staphylococcus aureus
+  - LightGBM
+  - chemometrics
+  - machine learning
+abstract: >-
+  Pipeline reprodutível para investigar a distinção entre cepas resistentes e
+  sensíveis de Staphylococcus aureus a partir de imagens hiperespectrais SWIR,
+  com calibração radiométrica, segmentação de ROI, pré-processamento
+  quimiométrico, seleção de bandas e LightGBM avaliado no nível de amostra com
+  validação cruzada sem vazamento e teste de permutação. Iniciação Científica
+  (CNPq) orientada por Clarimar José Coelho.
