@@ -49,7 +49,7 @@ As imagens brutas pertencem ao laboratório e **não são distribuídas** neste 
 Organizado em camadas no padrão medalhão (bronze → silver → gold):
 
 ```mermaid
-flowchart LR
+flowchart TD
     B["Bronze<br/>cubos .hdr/.raw"] --> C["Calibração radiométrica<br/>(raw - dark) / (white - dark)"]
     C --> R["Remoção de bandas ruidosas<br/>256 → 226"]
     R --> H["Segmentação da ROI<br/>Transformada de Hough"]
